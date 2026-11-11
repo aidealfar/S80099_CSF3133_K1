@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f7;
+    color: #333333;
+}
+
+/* Header & Footer */
+header, footer {
+    background-color: #1A5276;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #f39c12;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2E4053;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Navigation Interactive Link States */
+nav a:link { color: #ffffff; }
+nav a:visited { color: #bdc3c7; }
+nav a:hover { background-color: #f39c12; color: #ffffff; }
+nav a:active { background-color: #e67e22; }
+
+/* Sections & IDs */
+#destinations, #video, #trip {
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Class Selectors */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 18px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #95a5a6;
+    margin-right: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.caption {
+    font-style: italic;
+    margin-top: 8px;
+    color: #555;
+}
+
+/* Video Responsiveness */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form Styling */
+.trip-form {
+    background-color: #ebf5fb;
+    padding: 20px;
+    border: 1px solid #aeb6bf;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+}
