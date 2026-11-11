@@ -1,0 +1,100 @@
+/* Navigation Bar Layout & Reset */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #57615f;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+/* Navigation Links */
+nav li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Interactive Link */
+a:link { 
+    color: #1A5276; 
+}
+a:visited { 
+    color: #7D3C98; 
+}
+a:hover { 
+    color: #E67E22; 
+}
+a:active { 
+    color: #C0392B; 
+}
+
+/* Navigation Bar Hover & Active Overrides */
+nav a:link { 
+    color: #ffffff; 
+}
+nav a:visited { 
+    color: #f2f2f2; 
+}
+nav a:hover {
+    background-color: #E67E22;
+    color: #ffffff;
+}
+nav a:active { 
+    background-color: #C0392B; 
+}
+
+/* Responsive Media Styling */
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure {
+    margin: 10px 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 6px;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    background-color: #F2F4F4;
+    padding: 20px;
+    border: 1px solid #BDC3C7;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 480px;
+    margin-top: 10px;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border-left: 4px solid #1A5276;
+    padding: 8px 15px;
+    margin-bottom: 12px;
+}
+
+/* Footer Section Styling */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #57615f;
+;
+    color: white;
+}
+
+footer address a {
+    color: #F39C12;
+}
