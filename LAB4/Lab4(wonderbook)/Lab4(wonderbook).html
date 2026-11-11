@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage - Lab 4</title>
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Applying internal CSS -->
+    <style>
+        h1 {
+            text-decoration: underline overline;
+            text-align: center;
+        }
+        .strike-text {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Responsive Webpage</h1>
+    </header>
+
+    <!-- Navigation bar-->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Semantic structure using section and article -->
+    <section id="home">
+        <article>
+            <h2>About This Page</h2>
+            <p>This page demonstrates the use of semantic HTML5 elements and CSS styling.<br> You can see examples of <span class="strike-text">outdated tags</span><br> modern web development practices.</p>
+        </article>
+    </section>
+
+    <!-- Embedded video properly captioned -->
+    <section id="media">
+        <h2>Video Content</h2>
+        <figure>
+            <!-- Replace 'sample-video.mp4' with an actual video file path if you have one -->
+            <video width="100%" max-width="600" controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Figure 1: A sample embedded video demonstrating HTML5 media elements.</figcaption>
+        </figure>
+    </section>
+
+   <section id="media">
+    <h2>Embedded Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    <p class="caption">Caption: A sample embedded video.</p>
+</section>
+
+    <!-- Form -->
+    <section id="contact">
+        <h2>User Information Form</h2>
+        <form action="#" method="POST">
+            <!-- Text Inputs -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset>
+                <legend>Favorite Hobbies:</legend>
+                <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                <label for="sports">Sports</label>
+                
+                <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                <label for="reading">Reading</label>
+                
+                <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+                <label for="gaming">Gaming</label>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Form">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lab 4 Web Design Exercise</p>
+    </footer>
+
+</body>
+</html>

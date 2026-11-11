@@ -1,0 +1,144 @@
+/* General page styling and reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #34495e;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 0;
+}
+
+/* Link state styling (hover, visited, active) */
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:visited {
+    color: #bdc3c7; /* Lighter grey for visited links */
+}
+
+nav ul li a:hover {
+    background-color: #2980b9; /* Blue highlight on hover */
+    text-decoration: underline; /* Text decoration on hover */
+}
+
+nav ul li a:active {
+    background-color: #1abc9c; /* Teal when actively clicked */
+}
+
+/* Section and Typography Styling */
+section {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+
+/* Media Section Styling */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a5276;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li a {
+        padding: 10px;
+    }
+}
