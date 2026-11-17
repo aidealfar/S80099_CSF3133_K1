@@ -1,0 +1,142 @@
+/* (*)main */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e0f2fe; /* Light aquatic blue background */
+    color: #334155;
+    line-height: 1.8;
+}
+
+/* Header Styling (Contrasting Colors) */
+header {
+    background-color: #0369a1; /* Deep ocean blue */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 5px solid #0ea5e9;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+/* Navigation Bar (Distinct color, center alignment, and hover effects) */
+nav {
+    background-color: #0284c7;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 16px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #bae6fd; /* Light blue hover */
+    color: #0369a1;
+}
+
+/* Structural Margins for Readability */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Semantic Section Styling */
+article, section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    color: #0369a1;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-left: 4px solid #0ea5e9;
+    padding-left: 15px;
+}
+
+/* Proper Text Formatting and Spacing */
+article p, section p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+article p:last-child {
+    margin-bottom: 0;
+}
+
+/* Table Design (Borders, Padding, Alternating Rows, Hover Effects) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+thead th {
+    background-color: #0369a1;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #e0f2fe; /* Subtle row highlight on hover */
+    transition: background-color 0.3s;
+}
+
+/* Footer Styling (Subtle background, centered text) */
+footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
