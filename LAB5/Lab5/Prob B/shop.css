@@ -1,0 +1,136 @@
+/* Body styling non-repeating background image */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("paper.gif");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/* Header section with cover background image and white text */
+header {
+  background-image: linear-gradient(rgba(27, 79, 114, 0.75), rgba(27, 79, 114, 0.75)), url("books.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+/* Horizontal Navigation Bar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Navigation Hover and Active States */
+nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+nav li a.active {
+  background-color: #04AA6D;
+}
+
+/* Main Content Container */
+main {
+  width: 90%;
+  max-width: 960px;
+  margin: 25px auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Products Table Styling */
+#products {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#products td,
+#products th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Table Header Styling */
+#products th {
+  background-color: #04AA6D;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Alternating Row Colours and Hover Effect */
+#products tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#products tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Right-align Price Column */
+#products td.price,
+#products th.price {
+  text-align: right;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/*
+LIST OF ERRORS (in css):
+    Error 5 (shop.css, Line 2): Misspelled font name 'Robotto' -> fixed to 'Roboto'.
+    Error 6 (shop.css, Line 4): Invalid value background-repeat: no repeat (missing hyphen) -> fixed to no-repeat.
+    Error 7 (shop.css, Line 5): Misspelled property bacground-position -> fixed to background-position.
+    Error 8 (shop.css, Line 12): background-color: #333; placed outside the closing brace of ul -> moved inside ul rule.
+    Error 9 (shop.css, Line 18): display: inline; prevented vertical padding on links -> changed to display: block;.
+    Error 10 (shop.css, Lines 20-21): padding and text-decoration placed outside the closing brace of li a -> moved inside li a rule.
+    Error 11 (shop.css, Line 23): Invalid selector li:a:hover -> fixed to li a:hover.
+    Error 12 (shop.css, Line 24): background-color: #111; placed outside the closing brace of hover rule -> moved inside rule.
+    Error 13 (shop.css, Line 27): Invalid value border-collapse: collapsed -> fixed to border-collapse: collapse.
+    Error 14 (shop.css, Lines 31-32): border and padding placed outside the closing brace of #products td, #products th -> moved inside rule.
+    Error 15 (shop.css, Line 34): tr:nth-child(2) only styled row 2 instead of all even rows -> changed to tr:nth-child(even).
+    Error 16 (shop.css, Line 37): Invalid pseudo-class :hovered -> fixed to :hover.
+    Error 17 (shop.css, Line 38): background-color: #ddd; placed outside the closing brace of hover rule -> moved inside rule.
+    Error 18 (shop.css, Line 45): Missing semicolon after background-color: #f1f1f1 -> added semicolon.
+*/

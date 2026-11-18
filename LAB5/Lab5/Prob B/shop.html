@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Bookstore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+    <style>
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: #ffffff;">Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+  <!-- Navigation Bar with Active Link -->
+  <nav>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <table id="products">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Category</th>
+          <th class="price">Price (RM)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Design Basics</td>
+          <td>Textbook</td>
+          <td class="price">45.00</td>
+        </tr>
+        <tr>
+          <td>A4 Notebook</td>
+          <td>Stationery</td>
+          <td class="price">6.50</td>
+        </tr>
+        <tr>
+          <td>USB Drive 32GB</td>
+          <td>Gadget</td>
+          <td class="price">25.00</td>
+        </tr>
+        <tr>
+          <td>Highlighter Set</td>
+          <td>Stationery</td>
+          <td class="price">9.90</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2026 Campus Bookstore</p>
+  </footer>
+
+</body>
+</html>
+
+<!--
+    LIST OF ERRORS IDENTIFIED AND FIXED:
+    Error 1 (shop.html, Line 7): Invalid attribute value rel="stylesheets" -> fixed to rel="stylesheet".
+    Error 2 (shop.html, Line 10): <style> tag was placed inside <body> instead of <head> -> moved into <head>.
+    Error 3 (shop.html, Line 18): Invalid inline CSS syntax style="color=#1B4F72;" (used = instead of :) -> fixed to style="color: #1B4F72;" (and updated to white in Part 2 for header contrast).
+    Error 4 (shop.html, Line 20): Table id was "product" while CSS targeted "#products" -> fixed id="products".
+    Error 5 (shop.html, Line 13 ): missing nav Section -> Fixed open nav n close it.
+    Error 6 (shop.html, Line 26 ): missing header section n the header under the navigation -> Fix change to line 20 and put the header  section. 
+    Error 7 (shop.html, Line  ): missing main section -> Fix add main on line 32.
+    -->
