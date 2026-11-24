@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header introducing the quiz -->
+    <header>
+      <h1>Web Development Quiz</h1>
+      <p>Answer each multiple-choice question before the timer runs out.</p>
+    </header>
+
+    <!-- Section to display questions, answer options, and timer -->
+    <section id="quiz-section">
+      <div class="top-bar">
+        <span id="question-number">Question 1 of 5</span>
+        <span class="timer">Time Left: <span id="time">15</span>s</span>
+      </div>
+
+      <h2 id="question-text">Question goes here</h2>
+
+      <div id="options-list">
+        <!-- Options added by JavaScript -->
+      </div>
+
+      <div class="buttons">
+        <button id="clear-btn" onclick="clearOption()">Clear Option</button>
+        <button id="submit-btn" onclick="checkAnswer()">Submit Answer</button>
+        <button id="next-btn" onclick="nextQuestion()" disabled>Next Question</button>
+      </div>
+    </section>
+
+    <!-- Section to show feedback and correct answer at the bottom of the question -->
+    <section id="feedback-section" class="hidden">
+      <p id="feedback-message"></p>
+    </section>
+
+    <!-- Footer to display the user's score after finishing the quiz -->
+    <footer>
+      <p id="score-text">Finish the quiz to see your score.</p>
+      <button id="restart-btn" class="hidden" onclick="startQuiz()">Restart Quiz</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
