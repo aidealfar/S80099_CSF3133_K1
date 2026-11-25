@@ -1,0 +1,108 @@
+/* Base page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header and footer styling */
+header {
+  background-color: #164b6e;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Section containers */
+section {
+  background-color: #ffffff;
+  padding: 16px 20px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Input and button styling */
+input[type="text"] {
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+button {
+  background-color: #1d70b8;
+  color: #ffffff;
+  border: none;
+  padding: 9px 16px;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #124d80;
+}
+
+/* Choice images and VS layout */
+.arena {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.arena img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #fafafa;
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+#result {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+/* History table styling */
+table#history {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+}
+
+table#history th,
+table#history td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  text-align: center;
+}
+
+table#history th {
+  background-color: #164b6e;
+  color: #ffffff;
+}
