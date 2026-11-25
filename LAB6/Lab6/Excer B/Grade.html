@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Char set, title, and external CSS link -->
+  <meta charset="utf-8">
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Student Grade Calculator</h2>
+
+  <!-- Form cancels default submission when checkMark() returns false -->
+  <form name="gradeForm" onsubmit="return checkMark()">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="mark">Mark (0-100): </label>
+    <input type="text" id="mark" name="mark"><br>
+
+    <button type="submit">Check Grade</button>
+    <!-- Extension: Random Mark button -->
+    <button type="button" onclick="generateRandomMark()">Random Mark</button>
+  </form>
+
+  <p id="result"></p>
+  <!-- Extension: Date and time display below result -->
+  <p id="checkedTime"></p>
+
+  <button type="button" onclick="showTable()">Show Grade Table</button>
+  <div id="tableContainer"></div>
+
+  <!-- Linked to grade.js -->
+  <script src="grade.js"></script>
+</body>
+</html>
+
+<!-- 
+ Error 1 (grade.html, Line 8): onsubmit="checkMark()" did not return false, causing page reload and clearing result.
+ Error 2 (grade.html, Line 18): Script filename was "grades.js" instead of "grade.js".
+ Error 3 (grade.html, Line 19): onclick="showtable()" had wrong casing; function is named showTable().
+-->
